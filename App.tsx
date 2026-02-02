@@ -1,13 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { CATEGORIES } from './data';
-import { useCart } from './store';
-import { CartIcon, TrashIcon, PlusIcon, MinusIcon, CloseIcon, StarIcon } from './components/Icons';
-import ProductModal from './components/ProductModal';
-import Dashboard from './components/Dashboard';
-import ImageWithFallback from './components/ImageWithFallback';
-import { MenuItem, OrderPayload } from './types';
-
 const App: React.FC = () => {
   const { 
     menuItems, restaurantConfig, cart, orders, addOrder, addToCart, removeFromCart, updateQuantity, 
